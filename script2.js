@@ -10,10 +10,11 @@ $("button").on("click",function(event){
 
 	$("li:last").text($addToList.val())
 	$addToList.val("") // clear input after added to list
-	$("li:last").append('<input type="checkbox" name="checkMe" id="cb" class="yo" >') // add checkbox to last
-
- input = $( "form input:checkbox" )
-// /.log(input);
+	$("li:last").prepend('<input type="checkbox" name="checkMe" id="cb" class="yo" >') // add checkbox to last
+	$("li:last").prepend('<img src="plant2.png" height="25px" width="25px" class="plant">')
+	console.log ($('input:checkbox'))
+ // input = $('.checkbox-group:last')
+	// input.append('<img src="plant2.png" height="25px" width="25px" class="items">')
 
 
 
@@ -22,7 +23,7 @@ $("button").on("click",function(event){
 /// var input = $( "form input:checkbox" )
  //console.log(input);
 
-$(list).click(function(evt){
+ $(list).click(function(evt){
 	//evt.preventDefault()
 	//console.log(evt);
 	var item = $(evt.target)
@@ -30,12 +31,24 @@ $(list).click(function(evt){
 	//console.log(item.class)
 	if (item.is(":checkbox")) {
 		console.log(event.target);
-	if (item.parent().hasClass("completed")) {
-		item.parent().removeClass("completed")
-	} else {
-		item.parent().addClass("completed")
+		if (item.parent().hasClass("completed")) {
+			item.parent().removeClass("completed")
+		} else {
+			item.parent().addClass("completed")
+		}
 	}
-}
+
+	console.log((item.is(":checkbox")));
+
+	// if (item.is(":checkbox")) {
+	// 	console.log(event.target);
+	// 	if (item.parent().hasClass("completed")) {
+	// 		item.parent().removeClass("completed")
+	// 	} else {
+	// 		item.parent().addClass("completed")
+	// 	}
+	// }
+
 	// event.preventDefault()
 	//console.log("anyhtingadfsdf")
 

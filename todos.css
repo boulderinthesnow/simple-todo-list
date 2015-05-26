@@ -55,7 +55,8 @@ ul li {
   position: absolute;
 /*  float: right*/
   margin-bottom: -30%;
-  margin-left: 21.5%;
+  margin-left: 23.5%;
+  margin-top: 7px;
 }
 
 /*.plant{
@@ -70,7 +71,7 @@ img.plant{
     position: absolute;
 /*  float: right*/
   margin-bottom: -30%;
-  margin-left: 47%;
+  margin-left: 44%;
   left: 200px;
 }
 

@@ -38,29 +38,14 @@ $("button").on("click",function(event){
 		}
 	}
 
-	console.log((item.is(":checkbox")));
+	// console.log(item.is(":image"));
+	//console.log(item.attr("class"));
 
-	// if (item.is(":checkbox")) {
-	// 	console.log(event.target);
-	// 	if (item.parent().hasClass("completed")) {
-	// 		item.parent().removeClass("completed")
-	// 	} else {
-	// 		item.parent().addClass("completed")
-	// 	}
-	// }
+	if (item.attr("class") === "plant") {
+		//console.log("foo")
+		item.parent().remove()
 
-	// event.preventDefault()
-	//console.log("anyhtingadfsdf")
-
-//console.log($(this).parent());
-
-	// if ( $(this).parent().hasClass("completed") === false) {
-	// 	console.log("COMPLETED", event.target.parentNode)
-	// 	$(this).parent().addClass("completed")
-	// } else {
-	// $(this).parent().removeClass("completed")
-	// console.log("INCOMPLETE", event.target.parentNode)
-	// }
+	}
 
 })
 

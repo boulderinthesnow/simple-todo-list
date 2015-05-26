@@ -1,3 +1,4 @@
+
 // when submit botton is pressed append text from inputBox into list
 $list = $("ul")
 $addToList = $("#inputBox")
@@ -11,13 +12,10 @@ $("button").on("click",function(event){
 	$("li:last").text($addToList.val())
 	$addToList.val("") // clear input after added to list
 	$("li:last").prepend('<input type="checkbox" name="checkMe" id="cb" class="yo" >') // add checkbox to last
-	$("li:last").prepend('<img src="plant2.png" height="25px" width="25px" class="plant">')
+	$("li:last").prepend('<img src="plant2.png" height="25px" width="25px" class="plant hvr-bob">')
 	console.log ($('input:checkbox'))
  // input = $('.checkbox-group:last')
 	// input.append('<img src="plant2.png" height="25px" width="25px" class="items">')
-
-
-
 
 })
 /// var input = $( "form input:checkbox" )
@@ -41,7 +39,7 @@ $("button").on("click",function(event){
 	// console.log(item.is(":image"));
 	//console.log(item.attr("class"));
 
-	if (item.attr("class") === "plant") {
+	if (item.attr("class") === "plant hvr-bob") {
 		//console.log("foo")
 		item.parent().remove()
 
